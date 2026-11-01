@@ -1,4 +1,8 @@
 # Databricks notebook source
+# /// script
+# [tool.databricks.environment]
+# environment_version = "6"
+# ///
 # MAGIC %md
 # MAGIC **Read the Bronze data**
 
@@ -89,7 +93,7 @@ silver_df = (
         "fulfillment_status",
         F.when(
             F.col("delivered_units") < F.col("ordered_units"),
-            F.lit("SHORT_DELIVERY")
+            F.lit("UNDER_DELIVERY")
         )
         .when(
             F.col("delivered_units") > F.col("ordered_units"),
