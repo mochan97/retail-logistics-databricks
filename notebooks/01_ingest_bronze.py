@@ -6,7 +6,7 @@
 # MAGIC %md
 # MAGIC # Bronze Layer — Shipment Data Ingestion
 # MAGIC
-# MAGIC ## 1. Pipeline Overview
+# MAGIC ### 1.1 Pipeline Overview
 # MAGIC
 # MAGIC **Project:** Retail Logistics Lakehouse
 # MAGIC
@@ -39,7 +39,7 @@
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC ## 2. Configuration
+# MAGIC ### 1.2. Configuration, load CSV file, create Bronze table
 
 # COMMAND ----------
 
