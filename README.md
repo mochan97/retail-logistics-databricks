@@ -62,6 +62,7 @@ flowchart TD
     SI1 -->|"Spark SQL aggregation"| G1
     B4 -->|"Validate, parse, deduplicate"| SI2
 ```
+<img width="1347" height="806" alt="image" src="https://github.com/user-attachments/assets/f898ec1f-e500-427e-a0aa-7feffd5b2e08" />
 
 The **lakehouse** is not a separate app: it consists of governed data files in Unity Catalog Volumes, Delta tables in the Bronze/Silver/Gold schemas, and Spark workloads that process the data. Lakeflow Jobs orchestrate notebook execution.
 
